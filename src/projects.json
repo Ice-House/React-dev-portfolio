@@ -1,0 +1,65 @@
+{
+    "projects": [
+      {
+        "id": 1,
+        "title": "React Native App",
+        "description": "A simple app built using React Native and Expo.",
+        "image": "/src/assets/images/project_1.png",
+        "features": ["Cross-platform", "Fast performance", "Easy to use"],
+        "technologies": ["React Native", "Expo"],
+        "githubLink": "https://github.com/example/react-native-app",
+        "youtubeLink": "https://youtube.com/example-react-native-app"
+      },
+      {
+        "id": 2,
+        "title": "Portfolio Website",
+        "description": "A portfolio website showcasing my projects and skills.",
+        "image": "/src/assets/images/project_2.png",
+        "features": ["Responsive design", "Fast performance", "Showcases projects"],
+        "technologies": ["React.js", "Tailwind CSS", "Vite"],
+        "githubLink": "https://github.com/example/portfolio-website",
+        "youtubeLink": "https://youtube.com/example-portfolio-website"
+      },
+      {
+        "id": 3,
+        "title": "E-commerce Platform",
+        "description": "A platform for buying and selling products online.",
+        "image": "/src/assets/images/project_3.png",
+        "features": ["Secure payments", "User authentication", "Product management"],
+        "technologies": ["React.js", "Node.js", "MongoDB"],
+        "githubLink": "https://github.com/example/ecommerce-platform",
+        "youtubeLink": "https://youtube.com/example-ecommerce-platform"
+      },
+      {
+        "id": 4,
+        "title": "Task Management App",
+        "description": "An app to manage tasks and increase productivity.",
+        "image": "/src/assets/images/project_4.png",
+        "features": ["Task reminders", "Collaborative features", "Easy to use"],
+        "technologies": ["React Native", "Firebase"],
+        "githubLink": "https://github.com/example/task-management-app",
+        "youtubeLink": "https://youtube.com/example-task-management-app"
+      },
+      {
+        "id": 5,
+        "title": "Weather App",
+        "description": "A weather forecast app with real-time data.",
+        "image": "/src/assets/images/project_5.png",
+        "features": ["Real-time updates", "Location-based weather", "Minimalist design"],
+        "technologies": ["React Native", "API Integration"],
+        "githubLink": "https://github.com/example/weather-app",
+        "youtubeLink": "https://youtube.com/example-weather-app"
+      },
+      {
+        "id": 6,
+        "title": "Blog Platform",
+        "description": "A platform for creating and sharing blog posts.",
+        "image": "/src/assets/images/project_6.png",
+        "features": ["Rich text editor", "User authentication", "Comment system"],
+        "technologies": ["React.js", "Node.js", "MySQL"],
+        "githubLink": "https://github.com/example/blog-platform",
+        "youtubeLink": "https://youtube.com/example-blog-platform"
+      }
+    ]
+  }
+  
