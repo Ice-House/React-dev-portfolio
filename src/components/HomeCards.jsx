@@ -67,7 +67,7 @@ const HomeCards = () => {
               </p>
               <div className="flex gap-3">
                 <motion.a
-                  href="https://youtube.com"
+                  href="https://youtube.com/@tabi4301"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-red-500 hover:text-red-700"
