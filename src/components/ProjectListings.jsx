@@ -8,13 +8,18 @@ const ProjectListings = ({ isHome = false }) => {
 
   useEffect(() => {
     const fetchProjects = async () => {
-      const apiUrl = isHome ? "/api/projects?_limit=3" : "/api/projects";
+      // Use your deployed JSON Server URL from Render
+      const apiUrl = isHome
+        ? "https://react-dev-portfolio.onrender.com/projects?_limit=3"
+        : "https://react-dev-portfolio.onrender.com/projects";
+
       try {
         const res = await fetch(apiUrl);
+        if (!res.ok) throw new Error(`HTTP error! Status: ${res.status}`);
         const data = await res.json();
         setProjects(data);
       } catch (error) {
-        console.log("Error fetching projects", error);
+        console.log("Error fetching projects:", error);
       } finally {
         setLoading(false);
       }
@@ -33,7 +38,7 @@ const ProjectListings = ({ isHome = false }) => {
         {loading ? (
           <Spinner loading={loading} />
         ) : (
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-1 ">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-1">
             {projects.map((project) => (
               <ProjectListing key={project.id} project={project} />
             ))}
