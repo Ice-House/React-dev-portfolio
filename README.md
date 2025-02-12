@@ -8,17 +8,18 @@ React.js Developer Portfolio
 🛠️ Technologies Highlight: Tools and technologies for each project.
 📞 Contact Section: Includes a form, social links, and location map.
 
-🛠️ Tech Stack
-Frontend: React.js, Tailwind CSS
-Backend (Mock API): JSON Server
-Routing: React Router
-Icons: React Icons
-Spinner: React Spinners
-Bundler: Vite
+🛠️ **Tech Stack**
+
+- Frontend: React.js, Tailwind CSS
+- Backend (Mock API): JSON Server (hosted on Render)
+- Routing: React Router
+- Icons: React Icons
+- Spinner: React Spinners
+- Bundler: Vite
 
 🚀 Getting Started
 Clone the repository:
-git clone https://github.com/yourusername/reactjs-portfolio.git
+git clone https://github.com/Ice-House/reactjs-portfolio.git
 cd reactjs-portfolio
 Install dependencies:
 npm install
@@ -30,21 +31,22 @@ Start the development server:
 npm run dev
 
 Open in your browser:
-http://localhost:4000
+[https://willowy-medovik-f8ace9.netlify.app](https://willowy-medovik-f8ace9.netlify.app)
 
 📸 Screenshots
 Home Projects Contact
 
-🖥️ Deployment
-Deploy to platforms like Vercel, Netlify, or GitHub Pages. Example (Vercel):
-npm install -g vercel
-vercel
+🖥️ **Deployment**
+The app is deployed on Netlify, while the backend data is hosted on Render.
 
-🧑‍💻 Author
-Young Carter
-GitHub
-LinkedIn
-Portfolio
+- **Frontend (Netlify)**: [Your Portfolio Website](https://willowy-medovik-f8ace9.netlify.app)
+- **Backend (Render)**: [Render API](https://your-api.onrender.com)
+
+🧑‍💻 Author  
+Young Carter  
+[GitHub](https://github.com/Ice-House)  
+[LinkedIn](https://www.linkedin.com/in/yong-carter)  
+[Portfolio](https://willowy-medovik-f8ace9.netlify.app)
 
 # React + Vite
 
