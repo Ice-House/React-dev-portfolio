@@ -22,7 +22,7 @@ const AboutPage = () => {
       >
         <img src={logo} alt="Your Name" className="w-32 h-32 rounded-full" />
         <div>
-          <h2 className="text-3xl font-bold">Hello, I'm [Your Name]</h2>
+          <h2 className="text-3xl font-bold">Hello, I'm Young Carter</h2>
           <p className="mt-2">
             A passionate web and mobile developer specializing in React and
             React Native.
@@ -89,35 +89,57 @@ const AboutPage = () => {
         </h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           <div className="card shadow-lg p-6 bg-gradient-to-r from-green-400 to-blue-500 rounded-lg transform hover:scale-105 transition-all duration-300">
-            <h4 className="text-xl font-bold">Project Title</h4>
+            <h4 className="text-xl font-bold">Bootstrap Tutorial</h4>
             <p className="text-gray-200 mt-2">
-              Short project description goes here.
+              A simple Bootstrap website tutorial for beginners, showcasing the
+              basics of responsive design and components, perfect for those new
+              to web development.
             </p>
-            <a href="#" className="mt-4 inline-block text-white font-semibold">
+            <a
+              href="https://github.com/Yong-Carter/Bootstrap-Tutorial"
+              className="mt-4 inline-block text-white font-semibold"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               View Project
             </a>
           </div>
           {/* Add more project cards */}
           <div className="card shadow-lg p-6 bg-gradient-to-r from-green-400 to-blue-500 rounded-lg transform hover:scale-105 transition-all duration-300">
-            <h4 className="text-xl font-bold">Project Title</h4>
+            <h4 className="text-xl font-bold">Chatbot</h4>
             <p className="text-gray-200 mt-2">
-              Short project description goes here.
+              A simple chatbot built with Python and OpenAI, designed to assist
+              with answering questions and providing information in a
+              conversational way.
             </p>
-            <a href="#" className="mt-4 inline-block text-white font-semibold">
+            <a
+              href="https://github.com/Yong-Carter/Tech-Room"
+              className="mt-4 inline-block text-white font-semibold"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               View Project
             </a>
           </div>
+
           {/* Add more project cards */}
+
           <div className="card shadow-lg p-6 bg-gradient-to-r from-green-400 to-blue-500 rounded-lg transform hover:scale-105 transition-all duration-300">
-            <h4 className="text-xl font-bold">Project Title</h4>
+            <h4 className="text-xl font-bold">TodoApp</h4>
             <p className="text-gray-200 mt-2">
-              Short project description goes here.
+              A simple to-do app to manage tasks, built with React and styled
+              with Tailwind CSS. It allows users to add, edit, and delete tasks
+              with ease.
             </p>
-            <a href="#" className="mt-4 inline-block text-white font-semibold">
+            <a
+              href="https://github.com/Yong-Carter/REACT.JS-TODO-APP"
+              className="mt-4 inline-block text-white font-semibold"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               View Project
             </a>
           </div>
-          {/* Add more project cards */}
         </div>
       </motion.div>
 

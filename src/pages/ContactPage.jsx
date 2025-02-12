@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
 import {
   FaGithub,
   FaLinkedin,
@@ -9,9 +10,30 @@ import {
 import { motion } from "framer-motion";
 
 const ContactPage = () => {
+  const form = useRef();
+  const [status, setStatus] = useState("");
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_vrair3a", // Replace with your EmailJS Service ID
+        "template_f0z5y3s", // Replace with your EmailJS Template ID
+        form.current,
+        "cGK2vwHvZsGNbftmM" // Replace with your EmailJS Public Key
+      )
+      .then(() => {
+        setStatus("✅ Message sent successfully!");
+        form.current.reset();
+      })
+      .catch(() => {
+        setStatus("❌ Failed to send message. Try again later.");
+      });
+  };
+
   return (
-    <div className="w-full max-w-6xl mx-auto py-12 px-6 mt-12">
-      {/* Header */}
+    <div className="w-full max-w-7xl mx-auto py-12 px-6 mt-12">
       <motion.div
         className="text-center mb-12 bg-gradient-to-r from-indigo-500 to-purple-500 text-white py-8 rounded-lg shadow-md"
         initial={{ opacity: 0, y: -50 }}
@@ -25,7 +47,6 @@ const ContactPage = () => {
         </p>
       </motion.div>
 
-      {/* Two-Column Layout */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
         {/* Contact Form */}
         <motion.div
@@ -37,29 +58,35 @@ const ContactPage = () => {
           <h2 className="text-2xl font-bold mb-6 text-indigo-600">
             Send a Message
           </h2>
-          <form className="space-y-6">
+          <form ref={form} onSubmit={sendEmail} className="space-y-6">
             <div>
               <label className="block mb-1 text-gray-700">Your Name</label>
               <input
                 type="text"
+                name="name"
                 placeholder="Enter your name"
-                className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500"
+                required
               />
             </div>
             <div>
               <label className="block mb-1 text-gray-700">Your Email</label>
               <input
                 type="email"
+                name="email"
                 placeholder="Enter your email"
-                className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500"
+                required
               />
             </div>
             <div>
               <label className="block mb-1 text-gray-700">Your Message</label>
               <textarea
+                name="message"
                 placeholder="Enter your message"
                 rows="5"
-                className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500"
+                required
               ></textarea>
             </div>
             <button
@@ -69,6 +96,9 @@ const ContactPage = () => {
               Send Message
             </button>
           </form>
+          {status && (
+            <p className="mt-4 text-center text-green-600">{status}</p>
+          )}
         </motion.div>
 
         {/* Contact Information */}
@@ -83,16 +113,15 @@ const ContactPage = () => {
               Contact Information
             </h2>
             <p className="text-gray-600">
-              <strong>Email:</strong> yourname@example.com
+              <strong>Email:</strong> yongcarter87@example.com
             </p>
             <p className="text-gray-600">
-              <strong>Phone:</strong> +123 456 7890
+              <strong>Phone:</strong> +34 3456 7890
             </p>
             <p className="text-gray-600">
-              <strong>Location:</strong> City, Country
+              <strong>Location:</strong> Madrid, Spain
             </p>
           </div>
-
           <div className="bg-white shadow-md rounded-lg p-6">
             <h2 className="text-2xl font-bold mb-4 text-indigo-600">
               Follow Me
