@@ -17,7 +17,7 @@
       "image": "/images/project_2.png",
       "features": ["Responsive design", "Fast performance", "Showcases projects"],
       "technologies": ["React.js", "Tailwind CSS", "Vite"],
-      "githubLink": "https://github.com/example/portfolio-website",
+      "githubLink": "https://github.com/Ice-House/React-dev-portfolio ",
       "youtubeLink": "https://youtube.com/example-portfolio-website"
     },
     {
